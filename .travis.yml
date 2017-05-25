@@ -12,8 +12,8 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_install:
-  - apt-get -qq update
-  - apt-get install curl
+  - sudo apt-get -qq update
+  - sudo apt-get install curl
   - rvm install 2.2.2
 
 install:
