@@ -10,14 +10,15 @@ permalink: /
     <p>Software &amp; Game Developer</p>
 
     <nav>
+      <ul>
       {% assign first = true %}
       {% for my_page in site.pages %}
         {% if my_page.title %}
-        {% unless first %} // {% endunless %} <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        <li><a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a></li>
         {% assign first = false %}
         {% endif %}
       {% endfor %}
-
+      </ul>
     </nav>
 
   </div>

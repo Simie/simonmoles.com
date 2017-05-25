@@ -18,6 +18,28 @@
     font-size: 1.2em;
     color: lighten($text-color, 30%);
   }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    color: $text-color;
+    line-height: $base-line-height;
+    display: inline;
+
+    // Gaps between nav items, but not on the first one
+    &:not(:first-child) {
+      margin-left: 10px;
+
+      &:before {
+        content: ' // ';
+        margin-right: 10px;
+      }
+    }
+  }
+
 }
 
 .rss-subscribe {
