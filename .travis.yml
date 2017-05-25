@@ -2,6 +2,11 @@ language: node_js
 node_js:
   - 'node'
 
+addons:
+  apt: 
+    packages:
+      - curl
+
 branches:
   only:
     - master
@@ -12,8 +17,6 @@ env:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
 
 before_install:
-  - sudo apt-get -qq update
-  - sudo apt-get install curl
   - rvm install 2.2.2
 
 install:
