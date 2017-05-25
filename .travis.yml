@@ -22,7 +22,7 @@ install:
 script:
   - jekyll build
   - npm test
-  - htmlproofer --assume-extension ./_site --internal-domains https://www.simonmoles.com
+  - htmlproofer --assume-extension ./_site --internal-domains www.simonmoles.com
 
 sudo: false
 
