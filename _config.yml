@@ -22,6 +22,8 @@ twitter_username: SimonMoles
 github_username: Simie
 timezone: Europe/London
 
+github_repository: "https://www.github.com/Simie/simonmoles.com"
+
 # Build settings
 markdown: kramdown
 gems:
