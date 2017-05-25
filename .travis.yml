@@ -18,7 +18,8 @@ before_install:
 
 install:
   - npm install
-  - gem install jekyll html-proofer
+  - gem install bundler
+  - bundle install
 
 script:
   - jekyll build
