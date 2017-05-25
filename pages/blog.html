@@ -15,7 +15,7 @@ header_title: Blog
       <p class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time>
         {% if post.author %} // <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
-        // <a href="{{ site.github_repository }}/{{ post.path }}">Source</a>
+        // <a href="{{ site.github_repository }}/blob/master/{{ post.path }}">Source</a>
         </p>
     </header>
 
