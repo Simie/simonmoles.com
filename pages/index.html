@@ -1,0 +1,63 @@
+---
+layout: minimal
+permalink: /
+---
+<header role="banner">
+  <div class="home-header" class="wrapper">
+
+    <h1>Simon Moles</h1>
+
+    <p>Software &amp; Game Developer</p>
+
+    <nav>
+      {% assign first = true %}
+      {% for my_page in site.pages %}
+        {% if my_page.title %}
+        {% unless first %} // {% endunless %} <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+        {% assign first = false %}
+        {% endif %}
+      {% endfor %}
+
+    </nav>
+
+  </div>
+</header>
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+    <div class="home">
+
+      <h1 class="page-heading">Recent Updates</h1>
+
+        {% for post in site.posts %}
+          {% capture current_date %}{{ post.date | date: "%b %Y" }}{% endcapture %}
+          {% capture next_date %}{{ post.previous.date | date: "%b %Y" }}{% endcapture %}
+
+          {% if forloop.first %}
+            <span class="post-meta">{{ current_date }}</span> 
+            <ul class="post-list">
+          {% endif %}
+
+            <li>
+              <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+            </li>
+
+          {% if forloop.last %}
+          </ul>
+          {% else %}
+              {% if current_date != next_date %}
+              </ul>
+            <span class="post-meta">{{ next_date }}</span> 
+              <ul class="post-list">
+              {% endif %}
+          {% endif %}
+        {% endfor %}
+      </ul>
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+
+    </div>
+  </div>
+</main>
+
+{% include footer.html %}

@@ -1,0 +1,59 @@
+{
+  "private": true,
+  "name": "simonmoles.com",
+  "version": "0.0.1",
+  "description": "My personal website built using the Frasco starter kit.",
+  "main": "gulpfile.js",
+  "scripts": {
+    "preinstall": "bundle install",
+    "start": "gulp",
+    "test": "gulp test",
+    "build": "gulp build --production",
+    "imagemin": "gulp imagemin",
+    "production": "gulp --production",
+    "sass": "gulp sass",
+    "server": "gulp server",
+    "server-production": "gulp server --production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Simie/simonmoles.com.git"
+  },
+  "keywords": [
+    "Autoprefixer",
+    "Bitters",
+    "Bourbon",
+    "Browsersync",
+    "gulp",
+    "imagemin",
+    "Jekyll",
+    "Neat",
+    "PostCSS",
+    "Sass",
+    "Webpack"
+  ],
+  "author": "Simon Moles",
+  "license": "CC-BY-3.0",
+  "bugs": {
+    "url": "https://github.com/Simie/simonmoles.com/issues"
+  },
+  "homepage": "https://www.simonmoles.com",
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "browser-sync": "^2.13.0",
+    "eslint-config-google": "^0.7.0",
+    "gulp": "^3.9.1",
+    "gulp-eslint": "^3.0.1",
+    "gulp-imagemin": "^3.0.1",
+    "gulp-newer": "^1.2.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.2.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-uglify": "^2.0.0",
+    "gulp-watch": "^4.3.8",
+    "imagemin-pngquant": "^5.0.0",
+    "vinyl-named": "^1.1.0",
+    "webpack-stream": "^3.2.0",
+    "yargs": "^6.2.0"
+  }
+}

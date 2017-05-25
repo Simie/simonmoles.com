@@ -1,0 +1,18 @@
+---
+layout: default
+permalink: /projects/
+title: Projects
+header_title: "Projects"
+---
+{% assign posts = site.categories.projects %}
+<h1 class="page-heading">Recent Updates</h1>
+
+<ul class="post-list">
+  {% for post in posts %}
+  <li>
+    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+  </li>
+  {% endfor %}
+</ul>
+
+<p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p

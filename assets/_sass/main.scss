@@ -1,0 +1,26 @@
+@charset "UTF-8";
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300";
+@import "bourbon/bourbon";
+@import "neat/neat";
+// @import "base/base";
+@import "minima";
+
+.home-header {
+  text-align: center;
+  margin-top: 7%;
+
+  h1 {
+    font-size: 3em;
+    font-family: $header-font-family;
+  }
+
+  h2 {
+    font-size: 1.2em;
+    color: lighten($text-color, 30%);
+  }
+}
+
+.rss-subscribe {
+  font-size: $small-font-size;
+  color: $grey-color;
+}
