@@ -1,8 +1,6 @@
 language: node_js
 node_js:
-  - '6'
-  - '5'
-  - '4'
+  - 'node'
 
 branches:
   only:
@@ -24,6 +22,12 @@ install:
 script:
   - jekyll build
   - npm test
-  - htmlproofer ./_site
+  - htmlproofer --assume-extension ./_site --internal-domains simonmoles.com
 
 sudo: false
+
+cache: 
+  - bundler
+  directories:
+    - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+    - node_modules
