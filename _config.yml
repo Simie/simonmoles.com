@@ -16,8 +16,8 @@
 title: "Simon Moles"
 email: me@simonmoles.com
 description: ""
-baseurl: "/new" # the subpath of your site, e.g. /blog
-url: https://www.simonmoles.com # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "/simonmoles.com" # the subpath of your site, e.g. /blog
+url: https://simie.github.io # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: SimonMoles
 github_username: Simie
 timezone: Europe/London
@@ -31,7 +31,7 @@ gems:
 exclude:
   - Gemfile
   - Gemfile.lock
-  - frasco.config.js
+  - site.config.js
   - gulpfile.js
   - LICENSE
   - node_modules
