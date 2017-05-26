@@ -26,8 +26,7 @@ install:
   - bundle install
 
 script:
-  - jekyll build --config _config.yml
-  - npm test
+  - npm test --production
   - htmlproofer --assume-extension ./_site --internal-domains www.simonmoles.com,simie.github.io
 
 sudo: false
