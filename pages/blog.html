@@ -11,7 +11,7 @@ header_title: Blog
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
-      <h1 class="post-title" itemprop="name headline"><a href="{{ post.url }}">{{ post.title | escape }}</a></h1>
+      <h1 class="post-title" itemprop="name headline"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
       <p class="post-meta">
         <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time>
         {% if post.author %} // <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
