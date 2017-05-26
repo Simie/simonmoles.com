@@ -12,9 +12,10 @@
   h1 {
     font-size: 3em;
     font-family: $header-font-family;
+    margin-bottom: 0px;
   }
 
-  h2 {
+  p {
     font-size: 1.2em;
     color: lighten($text-color, 30%);
   }
