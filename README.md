@@ -6,4 +6,4 @@ My personal blog + portfolio. Built using the [Fresco](https://github.com/ixkait
 
 `npm start` to run the development server.
 
-`npm run build` to build for production.
+`npm run build --production` to build for production.
