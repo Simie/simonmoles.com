@@ -33,7 +33,7 @@ permalink: /
         {% assign projects = site.categories.projects | where:'frontpage', true %}
         {% for post in projects limit:6 %}
           <li class="project-tile">
-            <div class="thumbnail" style="background-image: url({{post.thumbnail}})"></div>
+            <div class="thumbnail" style="background-image: url({% if post.thumbnail contains "://" %}{{post.thumbnail}}{% else %}{{post.thumbnail | relative_url}}{% endif %})"></div>
             <a class="post-link" title="{{ post.title | escape }}" href="{{ post.url | relative_url }}">{% if post.title_short %}{{post.title_short | escape}}{% else %}{{ post.title | escape }}{% endif %}</a>
           </li>
         {% endfor %}
