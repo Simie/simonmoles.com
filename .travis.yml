@@ -15,6 +15,7 @@ branches:
 env:
   global:
     - NOKOGIRI_USE_SYSTEM_LIBRARIES=true
+    - JEKYLL_ENV=production
 
 before_install:
   - rvm install 2.2.2
