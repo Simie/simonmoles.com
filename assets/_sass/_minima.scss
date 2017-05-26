@@ -484,24 +484,49 @@ pre {
   color: $grey-color;
 }
 
+ul.post-meta {
+  margin-left: 0px;
+}
+
+.post-meta li {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  &:not(:first-child)::before {
+    content: ' // ';
+  }
+}
+
 .post-link {
   display: block;
   //font-size: 24px;
 }
 
+.post-button {
+  display: inline-block;
+  
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid $grey-color-light;
+  border-radius: 5px;
 
+  &:after {
+    content: ' »';
+  }
+}
 
 /**
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit / 4;
 }
 
 .post-title {
   font-family: $header-font-family;
   font-size: 36px;
   line-height: 1;
+  margin-bottom: $spacing-unit/4;
 
   @include media-query($on-laptop) {
     font-size: 30px;

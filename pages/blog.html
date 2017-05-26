@@ -5,22 +5,23 @@ title: Blog
 header_title: Blog
 ---
 {% assign posts = site.categories.blog %}
-<h1 class="page-heading">Blog</h1>
 
 {% for post in posts %}
   <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
     <header class="post-header">
       <h1 class="post-title" itemprop="name headline"><a href="{{ post.url | relative_url }}">{{ post.title | escape }}</a></h1>
-      <p class="post-meta">
-        <time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time>
-        {% if post.author %} // <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span>{% endif %}
-        // <a href="{{ site.github_repository }}/blob/master/{{ post.path }}">Source</a>
-        </p>
+      <ul class="post-meta">
+        <li><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%-d %b %Y" }}</time></li>
+        {% if post.author %}<li><span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ post.author }}</span></span></li>{% endif %}
+        <li><a href="{{ site.github_repository }}/blob/master/{{ post.path }}">Source</a></li>
+      </ul>
     </header>
 
     <div class="post-content" itemprop="articleBody">
       {{ post.excerpt }}
+
+      <a class="post-button" href="{{ post.url | relative_url }}">Continue Reading</a>
     </div>
   </article>
 {% endfor %}

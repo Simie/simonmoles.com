@@ -27,15 +27,13 @@ permalink: /
 <main class="page-content" aria-label="Content">
   <div class="wrapper">
     <div class="home">
-
       <h1 class="page-heading">Recent Updates</h1>
-
         {% for post in site.posts %}
           {% capture current_date %}{{ post.date | date: "%b %Y" }}{% endcapture %}
           {% capture next_date %}{{ post.previous.date | date: "%b %Y" }}{% endcapture %}
 
           {% if forloop.first %}
-            <span class="post-meta">{{ current_date }}</span> 
+            <span class="post-list-date">{{ current_date }}</span> 
             <ul class="post-list">
           {% endif %}
 
@@ -48,7 +46,7 @@ permalink: /
           {% else %}
               {% if current_date != next_date %}
               </ul>
-            <span class="post-meta">{{ next_date }}</span> 
+            <span class="post-list-date">{{ next_date }}</span> 
               <ul class="post-list">
               {% endif %}
           {% endif %}
