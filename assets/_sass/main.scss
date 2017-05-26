@@ -1,8 +1,7 @@
 @charset "UTF-8";
 @import "https://fonts.googleapis.com/css?family=Open+Sans|Raleway:300";
 @import "bourbon/bourbon";
-@import "neat/neat";
-// @import "base/base";
+@import "neat";
 @import "minima";
 
 .home-header {
@@ -50,4 +49,12 @@
 .rss-subscribe {
   font-size: $small-font-size;
   color: $grey-color;
+}
+
+.home-grid {
+  @include grid-container;
+}
+
+.home-grid__a-single-column {
+  @include grid-column(1);
 }
