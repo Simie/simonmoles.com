@@ -58,11 +58,7 @@ body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
+  font-feature-settings: "kern" 1;
   font-kerning: normal;
 }
 
@@ -398,27 +394,24 @@ pre {
   margin-left: 0;
 }
 
+$footer-grid: (
+  columns:3,
+  gutter: $spacing-unit
+);
+
 .footer-col-wrapper {
   font-size: 15px;
   color: $grey-color;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
+  @include grid-container;
 }
 
 .footer-col {
-  float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
-}
-
-.footer-col-1 {
-  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+  @include grid-column(1, $footer-grid);
 }
 
 .footer-col-2 {
-  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
-  width:         calc(33% - (#{$spacing-unit} / 2));
   text-align: center;
 
   ul {
@@ -428,8 +421,6 @@ pre {
 }
 
 .footer-col-3 {
-  width: -webkit-calc(33% - (#{$spacing-unit} / 2));
-  width:         calc(33% - (#{$spacing-unit} / 2));
   text-align: right;
 }
 
@@ -448,10 +439,9 @@ pre {
 
 @include media-query($on-palm) {
   .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+    @include grid-column(3, $footer-grid);
     text-align: left;
+    margin-left: $spacing-unit / 2;
   }
 }
 

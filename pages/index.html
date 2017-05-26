@@ -25,10 +25,24 @@ permalink: /
 </header>
 
 <main class="page-content" aria-label="Content">
-  <div class="wrapper">
-    <div class="home">
+  <div class="wrapper home-grid">
+
+    <div class="home column">
+      <h1 class="page-heading">Projects</h1>
+      <ul class="project-grid">
+        {% assign projects = site.categories.projects | where:'frontpage', true %}
+        {% for post in projects limit:6 %}
+          <li class="project-tile">
+            <div class="thumbnail" style="background-image: url({{post.thumbnail}})"></div>
+            <a class="post-link" title="{{ post.title | escape }}" href="{{ post.url | relative_url }}">{% if post.title_short %}{{post.title_short | escape}}{% else %}{{ post.title | escape }}{% endif %}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+    <div class="home column">
       <h1 class="page-heading">Recent Updates</h1>
-        {% for post in site.posts %}
+        {% for post in site.posts limit:5 %}
           {% capture current_date %}{{ post.date | date: "%b %Y" }}{% endcapture %}
           {% capture next_date %}{{ post.previous.date | date: "%b %Y" }}{% endcapture %}
 
