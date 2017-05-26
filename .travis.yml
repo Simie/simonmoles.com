@@ -35,3 +35,12 @@ cache:
   bundler: true
   directories:
     - $TRAVIS_BUILD_DIR/tmp/.htmlproofer
+
+deploy:
+  local_dir: "_site"
+  target_branch: "gh-pages"
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
