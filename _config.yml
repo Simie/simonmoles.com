@@ -24,6 +24,20 @@ timezone: Europe/London
 
 github_repository: "https://www.github.com/Simie/simonmoles.com"
 
+defaults:
+  -
+    scope:
+      path: "_posts/projects"
+    values:
+      layout: "project"
+      categories: "projects"
+  -
+    scope:
+      path: "_posts/blog"
+    values:
+      layout: "post"
+      categories: "blog"
+
 # Build settings
 markdown: kramdown
 gems:
