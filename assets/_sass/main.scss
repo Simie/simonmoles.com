@@ -4,6 +4,17 @@
 @import "neat";
 @import "minima";
 
+.center {
+  text-align: center;
+}
+
+/* Image figure styling */
+img + em {
+  font-size: $small-font-size;
+  color: $grey-color;
+  display: block;
+}
+
 /* home page styling  */
 .home-header {
   text-align: center;
