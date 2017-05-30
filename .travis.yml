@@ -27,7 +27,7 @@ install:
 
 script:
   - npm run build --production
-  - htmlproofer --assume-extension ./_site --internal-domains www.simonmoles.com,simie.github.io --url-swap '\/simonmoles\.com\/(?!blob)':'/'
+  - htmlproofer --assume-extension ./_site --internal-domains www.simonmoles.com,simie.github.io --url-swap '\/simonmoles\.com\/(?!blob)':'/' --http-status-ignore 999,302
 
 sudo: false
 
