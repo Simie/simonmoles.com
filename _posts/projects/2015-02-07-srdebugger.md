@@ -38,12 +38,12 @@ SRDebugger is structured so that the monitoring systems can execute without the 
 The Options panel is my personal favourite feature. It makes it incredibly easy to tweak the _look and feel_ of a game by pinning a property to the screen and adjusting it on the fly. I've used it for calibrating touch control sensitivities and animation speeds. It can also trigger methods, in my case I have commands like "Win Battle", "Reset Battle", "Give Money", to quickly reach the part of the game I need to test.
 
 ![Options Panel Example][options_usage]
-*Example of the options panel*
+*The options panel can tweak gameplay parameters and execute methods.*
 
 Another major aim for SRDebugger was for it to be "plug and play". I wanted the user to be able to import the plugin and be up and running in minutes. On the first import, a quick guide will appear telling the user how to access SRDebugger in their game. The next time they run their game, SRDebugger is ready to go. The runtime console uses the built in Unity log callback to retrieve the debug logs output by the standard Unity `Debug.Log()` method. The user doesn't have to change any of their logging code to start using SRDebugger.
 
 ![Welcome Screen Example][welcome_screen]
-*The welcome screen displayed to the user when first installed*
+*The welcome screen greets new users and explains how to get started.*
 
 The built-in bug reporter component communicates with my API server to forward the console log, (anonymised) system info, user email, message, and a screenshot of game to the developers email address. The reporter can be accessed from the panel or brought up with the SRDebugger API. This way the developer does not have to grant access to the entire debug panel to allow their users to report bugs. As browsing long logs on a touch device can be tedious, I use this service internally to send the console log to my PC where I can search and filter it as required.
 
