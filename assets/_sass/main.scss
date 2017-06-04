@@ -159,6 +159,17 @@ $project-grid: (
   }
 }
 
+.home-post-list {
+  display: block;
+  margin-top: -2px;
+
+  span {
+    display: block;
+    line-height: 100%;
+    padding-bottom: 6px;
+  }
+}
+
 /* Responsive container for embedding */
 
 .responsive-container {

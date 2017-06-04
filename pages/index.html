@@ -42,6 +42,7 @@ permalink: /
 
     <div class="home column">
       <h1 class="page-heading">Recent Updates</h1>
+        <div class="home-post-list">
         {% for post in site.posts limit:5 %}
           {% capture current_date %}{{ post.date | date: "%b %Y" }}{% endcapture %}
           {% capture next_date %}{{ post.previous.date | date: "%b %Y" }}{% endcapture %}
@@ -66,6 +67,7 @@ permalink: /
           {% endif %}
         {% endfor %}
       </ul>
+      </div>
 
       <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
 
