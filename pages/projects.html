@@ -4,13 +4,20 @@ permalink: /projects/
 title: Projects
 header_title: "Projects"
 ---
-{% assign posts = site.categories.projects %}
-<h1 class="page-heading">Recent Updates</h1>
+{% assign posts = (site.categories.projects | sort: 'date') %}
 
-<ul class="post-list">
+<ul class="project-list">
   {% for post in posts %}
   <li>
-    <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span> <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+    <a href="{{ post.url | relative_url }}">
+      <div class="thumbnail">
+        <div style="background-image: url({% if post.thumbnail contains "://" %}{{post.thumbnail}}{% else %}{{post.thumbnail | relative_url}}{% endif %})"></div>
+      </div>
+      <div class="content">
+        <h1>{{ post.title | escape }}</h1>
+        <p>{{ post.description | strip_html }}</p>
+      </div>
+    </a>
   </li>
   {% endfor %}
 </ul>

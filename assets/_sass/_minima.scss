@@ -310,6 +310,7 @@ pre {
   }
 
   @include media-query($on-palm) {
+    z-index: 10;
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;

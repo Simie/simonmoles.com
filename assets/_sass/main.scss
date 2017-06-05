@@ -103,8 +103,9 @@ $project-grid: (
   @include grid-container;
 }
 
-.project-tile {
+.project-grid .project-tile {
   @include grid-column(1, $project-grid);
+
   padding-top: 33.3%;
   position: relative;
   overflow: hidden;
@@ -124,6 +125,11 @@ $project-grid: (
     opacity: 1.0;
 
     transition: filter 0.7s, transform 0.7s, opacity 0.7s;
+
+
+    @include media-query($on-palm) {
+      filter: grayscale(0%);
+    }
   }
 
   a {
@@ -189,4 +195,125 @@ $project-grid: (
 	top: 0; left: 0;
 	width: 100%;
 	height: 100%;
+}
+
+/* Project List */
+
+$project-list-grid: (
+  columns: 2,
+  gutter: 0
+);
+
+ul.project-list {
+  list-style: none;
+  margin-left: 0;
+  margin: 0;
+
+  @include grid-container;
+
+  display: flex;
+
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  li {
+    display: block;
+    display: flex;
+
+    @include grid-column(1, $home-grid);
+
+    @include media-query($on-palm) {
+      @include grid-column(2, $home-grid);
+      margin-left: 0;
+      width: 100%;  
+    }
+
+    margin-bottom: $spacing-unit;
+  }
+
+  a {
+    display: block;
+    width: 100%;
+    color: $text-color;
+
+    border: 1px solid $grey-color-light;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: box-shadow 0.7s;
+
+    transform: translate(0,0); // Fix border radius being overlapped by GPU accelerated thumb
+    white-space: nowrap;
+    position: relative;
+
+    .thumbnail {
+      overflow: hidden;
+      width: 100%;
+      padding-bottom: 66%;
+      position: relative;
+
+      div {
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        
+        filter: grayscale(100%) contrast(50%) blur(1px);
+        transform: scale(1.05,1.05);
+        opacity: 1.0;
+
+        transition: filter 0.7s, transform 0.7s, opacity 0.7s;
+      }
+
+      @include media-query($on-palm) {
+        div {
+          filter: grayscale(0%);
+        }
+      }   
+
+      @include media-query($on-laptop) {
+        div {
+          filter: grayscale(0%);
+        }
+      }
+
+    }
+
+    .content {
+      margin: $spacing-unit / 2;
+      padding: 0;
+
+      h1 {
+        font-size: 30px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        margin-top: 0;
+      }
+
+      p {
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: normal;
+      }
+    }
+
+    &:hover {
+      .thumbnail {
+        div {
+          transform: scale(1.1, 1.1);
+          filter: grayscale(0%) contrast(100%) blur(0);
+          opacity: 1.0;
+        }
+      }
+      text-decoration: none;
+      color: $brand-color;
+      box-shadow: 0 0 5px 3px $grey-color-light;
+    }
+  }
 }

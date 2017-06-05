@@ -4,6 +4,7 @@ thumbnail: "/assets/images/thumbnails/srdebugger.png"
 permalink: "/projects/srdebugger/"
 frontpage: true
 date: 2015-02-07
+description: "Runtime console & tools for Unity games."
 ---
 
 Console & Tools On-Device for Unity Games
