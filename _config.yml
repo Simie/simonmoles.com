@@ -43,7 +43,6 @@ defaults:
 markdown: kramdown
 gems:
   - jekyll-feed
-  - jekyll-extlinks
 exclude:
   - Gemfile
   - Gemfile.lock
