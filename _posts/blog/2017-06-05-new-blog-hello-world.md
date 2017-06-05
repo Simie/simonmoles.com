@@ -5,7 +5,7 @@ title: 'New Blog, Hello World'
 
 It's been a while since I updated my personal site. My old site was made during 2010 (!) and was really beginning to rot.
 The tipping point was when I noticed my clever bracket design looked terrible if the user happened to have the Raleway font installed on their PC, rather than using the version served from my site. So, away with all that. 
-Renovating this site also gave me an opportunity to brush up on all the latest web technologies. CSS is a joy to use now that all browsers support the features that were held back by Internet Explorer back when I last worked on this site. Rounded corners? Box sizing? Filters? Media queries? Calc!? Nice.
+Renovating this site also gave me an opportunity to brush up on all the latest web technologies. CSS is a joy to use now that all browsers support the features that were held back by Internet Explorer when I last worked on this site. Rounded corners? Box sizing? Filters? Media queries? Calc!? Nice.
 
 <!--more-->
 

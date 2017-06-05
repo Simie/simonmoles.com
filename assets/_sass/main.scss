@@ -121,7 +121,7 @@ $project-grid: (
     bottom: 0;
     right: 0;
     
-    filter: grayscale(100%) contrast(50%) blur(1px);
+    filter: grayscale(85%) contrast(50%) blur(1px);
     transform: scale(1.05,1.05);
     opacity: 1.0;
 
@@ -185,6 +185,7 @@ $project-grid: (
 	padding-top: 30px;
 	height: 0;
 	overflow: hidden;
+  margin-bottom: $spacing-unit;
 }
 .responsive-container,
 	.responsive-container iframe {
@@ -264,9 +265,8 @@ ul.project-list {
         bottom: 0;
         right: 0;
         
-        filter: grayscale(100%) contrast(50%) blur(1px);
+        filter: grayscale(85%) contrast(50%) blur(1px);
         transform: scale(1.05,1.05);
-        opacity: 1.0;
 
         transition: filter 0.7s, transform 0.7s, opacity 0.7s;
       }
@@ -309,7 +309,6 @@ ul.project-list {
         div {
           transform: scale(1.1, 1.1);
           filter: grayscale(0%) contrast(100%) blur(0);
-          opacity: 1.0;
         }
       }
       text-decoration: none;
