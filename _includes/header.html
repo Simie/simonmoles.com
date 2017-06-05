@@ -6,7 +6,11 @@
       <span class="page-title">{{ page.header_title | escape }}</span>
     {% else %}
       {% if layout.header_title And layout.header_title != undefined %}
-        <span class="page-title">{{ layout.header_title }}</span>
+      {% if layout.header_link And layout.header_link != undefined %}
+          <span class="page-title"><a href="{{ layout.header_link | relative_url }}">{{ layout.header_title }}</a></span>
+        {% else %}
+          <span class="page-title">{{ layout.header_title }}</span>
+        {% endif %}
       {% endif %}
     {% endif %}
 
