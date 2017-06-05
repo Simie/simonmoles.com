@@ -24,6 +24,8 @@ GEM
       parallel (~> 1.3)
       typhoeus (~> 0.7)
       yell (~> 2.0)
+    htmlbeautifier (1.3.1)
+    htmlcompressor (0.3.1)
     i18n (0.8.1)
     jekyll (3.4.3)
       addressable (~> 2.4)
@@ -43,6 +45,10 @@ GEM
       jekyll (~> 3.3)
     jekyll-sass-converter (1.5.0)
       sass (~> 3.4)
+    jekyll-tidy (0.2.2)
+      htmlbeautifier
+      htmlcompressor
+      jekyll
     jekyll-watch (1.5.0)
       listen (~> 3.0, < 3.1)
     kramdown (1.13.2)
@@ -80,6 +86,7 @@ DEPENDENCIES
   jekyll (= 3.4.3)
   jekyll-extlinks
   jekyll-feed (~> 0.6)
+  jekyll-tidy
 
 RUBY VERSION
    ruby 2.3.1p112

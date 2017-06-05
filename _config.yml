@@ -43,6 +43,7 @@ defaults:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-tidy
 exclude:
   - Gemfile
   - Gemfile.lock
