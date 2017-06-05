@@ -1,6 +1,7 @@
 ---
 title: "Precision Engineering"
 thumbnail: "/assets/images/thumbnails/pe.jpg"
+banner: "/assets/images/pe/header_notext.jpg"
 permalink: "/projects/precision-engineering/"
 frontpage: true
 description: "Popular mod for Cities: Skylines. Adds angle snapping, guidelines when building roads."
@@ -40,4 +41,4 @@ Colossal Order implemented a very similar set of features into the base game in 
 [reddit_thread]: https://www.reddit.com/r/CitiesSkylines/comments/37i4ls/release_precision_engineering_updated_guide_lines/
 [github_repo]: https://github.com/Simie/PrecisionEngineering
 [cope]: https://github.com/sschoener/cities-skylines-detour
-[gifs]: http://imgur.com/voLHeOi
+[gifs]: https://imgur.com/a/YGXHH

@@ -12,7 +12,11 @@ header_link: "/projects/"
   <li>
     <a href="{{ post.url | relative_url }}">
       <div class="thumbnail">
+        {% if post.banner %}
+        <div style="background-image: url({% if post.banner contains "://" %}{{post.banner}}{% else %}{{post.banner | relative_url}}{% endif %})"></div>
+        {% else %}
         <div style="background-image: url({% if post.thumbnail contains "://" %}{{post.thumbnail}}{% else %}{{post.thumbnail | relative_url}}{% endif %})"></div>
+        {% endif %}
       </div>
       <div class="content">
         <h1>{{ post.title | escape }}</h1>
