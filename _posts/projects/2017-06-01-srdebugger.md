@@ -1,5 +1,6 @@
 ---
 title: "SRDebugger"
+tags: [Unity, Asset, Stompy Robot]
 thumbnail: "/assets/images/thumbnails/srdebugger.png"
 permalink: "/projects/srdebugger/"
 frontpage: true
@@ -10,8 +11,6 @@ order: 0
 
 Console & Tools On-Device for Unity Games
 ===
-
-SRDebugger is a runtime console and tool system for the Unity game engine.
 
 ![Banner][banner]
 

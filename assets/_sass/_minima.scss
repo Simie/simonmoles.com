@@ -521,9 +521,27 @@ ul.post-meta {
   font-size: 36px;
   line-height: 1;
   margin-bottom: $spacing-unit/4;
+  display: inline;
 
   @include media-query($on-laptop) {
     font-size: 30px;
+  }
+}
+
+ul.post-tags {
+  list-style: none;
+  display: inline;
+  line-height: 36px;
+  margin-bottom: $spacing-unit/4;
+  text-align: right;
+
+  li {
+    display: inline-block;
+    line-height: 1;
+    padding: 8px;
+    margin: 2px;
+    border-radius: 4px;
+    background-color: $grey-color-light;
   }
 }
 
