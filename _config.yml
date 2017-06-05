@@ -21,6 +21,7 @@ url: https://simie.github.io # the base hostname & protocol for your site, e.g. 
 twitter_username: SimonMoles
 github_username: Simie
 timezone: Europe/London
+excerpt_separator: <!--more-->
 
 github_repository: "https://www.github.com/Simie/simonmoles.com"
 
