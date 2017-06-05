@@ -74,4 +74,4 @@ Links
 [banner]: {{"/assets/images/project_srdebugger/banner.png" | relative_url }}
 [options_usage]: {{"/assets/images/project_srdebugger/options_usage.gif" | relative_url }}
 [welcome_screen]: {{"/assets/images/project_srdebugger/welcome_screen.gif" | relative_url }}
-[nova]: {{ site.baseurl }}{% link _posts/projects/2014-10-01-nova.md %}
+[nova]: {{ site.baseurl }}{% link _posts/projects/2017-06-04-nova.md %}

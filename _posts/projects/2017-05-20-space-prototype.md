@@ -13,4 +13,4 @@ A story driven RPG inspired by EV Nova. This project was dropped in favour of [N
 <iframe width="1920" height="1080" src="https://www.youtube.com/embed/kVasxJhXBUY?vq=hd1080&amp;rel=0" frameborder="0" allowfullscreen></iframe>
 </div>
 
-[nova]: {{ site.baseurl }}{% link _posts/projects/2014-10-01-nova.md %}
+[nova]: {{ site.baseurl }}{% link _posts/projects/2017-06-04-nova.md %}
