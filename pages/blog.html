@@ -19,7 +19,7 @@ header_title: Blog
     </header>
 
     <div class="post-content" itemprop="articleBody">
-      {{ post.excerpt }}
+      {{ post.excerpt | extlinks }}
 
       <a class="post-button" href="{{ post.url | relative_url }}">Continue Reading</a>
     </div>

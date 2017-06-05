@@ -42,6 +42,7 @@ defaults:
 markdown: kramdown
 gems:
   - jekyll-feed
+  - jekyll-extlinks
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -54,3 +55,7 @@ exclude:
   - README.md
 
 google_analytics: UA-2611684-7
+
+extlinks:
+  attributes: { rel: nofollow, target: _blank }
+  rel_exclude: ['simonmoles.com']

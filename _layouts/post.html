@@ -9,12 +9,12 @@ header_title: "Blog"
     <p class="post-meta">
       <time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%-d %b, %Y" }}</time>
       {% if page.author %} // <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}
-      // <a href="{{ site.github_repository }}/blob/master/{{ page.path }}">Source</a>
+      // <a href="{{ site.github_repository }}/blob/master/{{ page.path }}" target="_blank">Source</a>
       </p>
   </header>
 
   <div class="post-content" itemprop="articleBody">
-    {{ content }}
+    {{ content | extlinks }}
   </div>
 
   {% if site.disqus.shortname %}
