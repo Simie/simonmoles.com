@@ -5,7 +5,7 @@ title: Projects
 header_title: "Projects"
 header_link: "/projects/"
 ---
-{% assign posts = (site.categories.projects | sort: 'date') %}
+{% assign posts = (site.categories.projects | sort: 'order','last') %}
 
 <ul class="project-list">
   {% for post in posts %}

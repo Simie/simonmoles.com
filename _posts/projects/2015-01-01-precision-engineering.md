@@ -5,6 +5,7 @@ banner: "/assets/images/pe/header_notext.jpg"
 permalink: "/projects/precision-engineering/"
 frontpage: true
 description: "Popular mod for Cities: Skylines. Adds angle snapping, guidelines when building roads."
+order: 3
 ---
 
 ![Banner][banner]

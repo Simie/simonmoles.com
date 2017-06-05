@@ -30,7 +30,7 @@ permalink: /
     <div class="home column">
       <h1 class="page-heading">Projects</h1>
       <ul class="project-grid">
-        {% assign projects = site.categories.projects | where:'frontpage', true %}
+        {% assign projects = site.categories.projects | sort: 'order','last' | where:'frontpage', true %}
         {% for post in projects limit:6 %}
           <li class="project-tile">
             <div class="thumbnail" style="background-image: url({% if post.thumbnail contains "://" %}{{post.thumbnail}}{% else %}{{post.thumbnail | relative_url}}{% endif %})"></div>
