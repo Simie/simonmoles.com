@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xml" href="https://simie.github.io/simonmoles.com/feed.xslt.xml"?><feed xmlns="http://www.w3.org/2005/Atom"><generator uri="http://jekyllrb.com" version="3.4.3">Jekyll</generator><link href="https://simie.github.io/simonmoles.com/feed.xml" rel="self" type="application/atom+xml" /><link href="https://simie.github.io/simonmoles.com/" rel="alternate" type="text/html" /><updated>2017-06-06T01:00:11+01:00</updated><id>https://simie.github.io/simonmoles.com//</id><title type="html">Simon Moles</title><subtitle></subtitle><entry><title type="html">New Blog, Hello World</title><link href="https://simie.github.io/simonmoles.com/blog/2017/06/05/new-blog-hello-world.html" rel="alternate" type="text/html" title="New Blog, Hello World" /><published>2017-06-05T00:00:00+01:00</published><updated>2017-06-05T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/blog/2017/06/05/new-blog-hello-world</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/blog/2017/06/05/new-blog-hello-world.html">&lt;h3 id=&quot;hell-its-about-time&quot;&gt;Hell, It’s About Time&lt;/h3&gt;
+          &lt;p&gt;It’s been a while since I updated my personal site. My old site was made during 2010 (!) and was really beginning to rot.
+          The tipping point was when I noticed my clever bracket design looked terrible if the user happened to have the Raleway font installed on their PC, rather than using the version served from my site. So, away with all that. 
+          Renovating this site also gave me an opportunity to brush up on all the latest web technologies. CSS is a joy to use now that all browsers support the features that were held back by Internet Explorer when I last worked on this site. Rounded corners? Box sizing? Filters? Media queries? Calc!? Nice.&lt;/p&gt;
+          &lt;!--more--&gt;
+          &lt;h3 id=&quot;enter-ssg-static-site-generator&quot;&gt;Enter SSG (Static Site Generator)&lt;/h3&gt;
+          &lt;p&gt;A blog rarely updates, so it makes no sense to have a CMS running when each request usually returns pretty much the same result. 
+          A static site generator takes the data source and generates a set of html files that can be served from any web host. 
+          This has a number of advantages:&lt;/p&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Reduced chance of site being compromised by vulnerabilities in e.g. Wordpress.&lt;/li&gt;
+          &lt;li&gt;No need to set up databases, PHP, etc on web host, or when moving.&lt;/li&gt;
+          &lt;li&gt;Easier to scale during times of increased traffic. Just copy the files to a CDN based host.&lt;/li&gt;
+          &lt;li&gt;Site loads &lt;strong&gt;super fast&lt;/strong&gt;. It’s just serving html!&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;I decided on using &lt;a href=&quot;https://jekyllrb.com/&quot;&gt;Jekyll&lt;/a&gt; for this new site. I have used it before for my &lt;a href=&quot;https://www.stompyrobot.uk/&quot;&gt;company website&lt;/a&gt;, so I was already familiar with how it all works. 
+          An alternative could have been &lt;a href=&quot;https://gohugo.io/&quot;&gt;Hugo&lt;/a&gt;, but it seems to have less buzz around it, and I’m less familiar with Go than I am with Ruby.&lt;/p&gt;
+          &lt;h3 id=&quot;open-source&quot;&gt;Open Source&lt;/h3&gt;
+          &lt;p&gt;I used a starter project called &lt;a href=&quot;https://github.com/ixkaito/frasco&quot;&gt;Fresco&lt;/a&gt; to get everything up and running. This saved me having to scour the documentation to find the best practices for each technology and get something working fast.
+          The source is available to view on &lt;a href=&quot;https://www.github.com/Simie/simonmoles.com/&quot;&gt;Github&lt;/a&gt;. I’ve set up Travis to automatically build and test the site. HTML-Proofer checks for missing links, broken images, that sort of thing. No more broken links.&lt;/p&gt;
+          &lt;p&gt;This was also a good opportunity to try out the new &lt;abbr title=&quot;Windows Subsystem for Linux&quot;&gt;WSL&lt;/abbr&gt; build in the latest Windows 10 update. This fixes the networking issues I had with Jekyll last time I tried using &lt;abbr title=&quot;Windows Subsystem for Linux&quot;&gt;WSL&lt;/abbr&gt;.
+          The latest build works perfectly, so I’m able to run everything in a bash shell just as if I was working on a Mac or Linux. No more scrappy workarounds when using Ruby on Windows!&lt;/p&gt;</content><summary type="html">Hell, It’s About Time
+          It’s been a while since I updated my personal site. My old site was made during 2010 (!) and was really beginning to rot.
+          The tipping point was when I noticed my clever bracket design looked terrible if the user happened to have the Raleway font installed on their PC, rather than using the version served from my site. So, away with all that. 
+          Renovating this site also gave me an opportunity to brush up on all the latest web technologies. CSS is a joy to use now that all browsers support the features that were held back by Internet Explorer when I last worked on this site. Rounded corners? Box sizing? Filters? Media queries? Calc!? Nice.</summary></entry><entry><title type="html">Nova</title><link href="https://simie.github.io/simonmoles.com/projects/nova/" rel="alternate" type="text/html" title="Nova" /><published>2017-06-04T00:00:00+01:00</published><updated>2017-06-04T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/nova</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/nova/">&lt;h1 id=&quot;squad-based-action-rpg-for-tablet-devices&quot;&gt;Squad-based action RPG for tablet devices.&lt;/h1&gt;
+          &lt;p&gt;&lt;img src=&quot;/simonmoles.com/assets/images/project_nova/banner.jpg&quot; alt=&quot;Banner&quot; /&gt;&lt;/p&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Status: Unfinished&lt;/li&gt;
+          &lt;li&gt;Year: 2013-2014&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;Nova is a squad-based action RPG for tablet devices. 
+          I collaborated with an artist to create the visual style, silhouetting ships against a bright background and overlaying heavy glow effects for weapons, engines, highlights. 
+          A major focus was to take advantage of touch controls and streamlining interactions with the UI and squad control.&lt;/p&gt;
+          &lt;div class=&quot;responsive-container&quot;&gt;
+          &lt;iframe width=&quot;1920&quot; height=&quot;1080&quot; src=&quot;https://www.youtube.com/embed/xZELuhMO9es?vq=hd1080&amp;amp;rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;
+          &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;http://stompyrobot.uk/games/nova/&quot;&gt;Stompy Robot - Nova&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</content><category term="Unity" /><category term="Game" /><category term="Stompy Robot" /><summary type="html">Squad-based action RPG for tablet devices.
+          Status: Unfinished
+          Year: 2013-2014
+          Nova is a squad-based action RPG for tablet devices. 
+          I collaborated with an artist to create the visual style, silhouetting ships against a bright background and overlaying heavy glow effects for weapons, engines, highlights. 
+          A major focus was to take advantage of touch controls and streamlining interactions with the UI and squad control.
+          Links
+          Stompy Robot - Nova</summary></entry><entry><title type="html">SPACED</title><link href="https://simie.github.io/simonmoles.com/projects/spaced/" rel="alternate" type="text/html" title="SPACED" /><published>2017-06-01T00:00:00+01:00</published><updated>2017-06-01T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/spaced</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/spaced/">&lt;h1 id=&quot;spaceship-simulation-prototype&quot;&gt;Spaceship Simulation Prototype&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Status: Prototype&lt;/li&gt;
+          &lt;li&gt;Year: 2016-2017&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;SPACED is a prototype I am currently working on. Here is a collection of screenshots and videos from the development so far.&lt;/p&gt;
+          &lt;blockquote class=&quot;reddit-card&quot; data-card-created=&quot;1496704268&quot;&gt;&lt;a href=&quot;https://www.reddit.com/r/Unity3D/comments/3uhrvb/wip_atmosphere_simulation_explosive_decompression/?ref=share&amp;amp;ref_source=embed&quot;&gt;WIP atmosphere simulation (explosive decompression) for my space sim&lt;/a&gt; from &lt;a href=&quot;http://www.reddit.com/r/Unity3D&quot;&gt;Unity3D&lt;/a&gt;&lt;/blockquote&gt;
+          &lt;script async=&quot;&quot; src=&quot;//embed.redditmedia.com/widgets/platform.js&quot; charset=&quot;UTF-8&quot;&gt;&lt;/script&gt;
+          &lt;p&gt;&lt;strong&gt;Reddit Post&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:69%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/EntireThoroughKitfox&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Pipe Flow&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:68%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/HomelyBackGharial&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Prototype of new atmosphere flow algorithm.&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:67%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/EnergeticUnsungBobcat&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Fire spreading&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:75%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/FreshGraciousIcelandgull&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Wall pressure explosion&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:75%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/WholeSmugIslandcanary&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Atmosphere velocity effects&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:56%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/LegitimateCooperativeCygnet&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:61%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/ThoroughUntimelyAtlanticspadefish&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Gas Effects&lt;/strong&gt;&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:59%&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/UnlawfulTenseArthropods&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;p&gt;&lt;strong&gt;Networking Atmos / Pipe simulation LOD (Flash = Send Update, Follows Cursor/Player)&lt;/strong&gt;&lt;/p&gt;</content><category term="Unity" /><category term="Game" /><category term="Stompy Robot" /><summary type="html">Spaceship Simulation Prototype
+          Status: Prototype
+          Year: 2016-2017
+          SPACED is a prototype I am currently working on. Here is a collection of screenshots and videos from the development so far.
+          WIP atmosphere simulation (explosive decompression) for my space sim from Unity3D
+          Reddit Post
+          Pipe Flow
+          Prototype of new atmosphere flow algorithm.
+          Fire spreading
+          Wall pressure explosion
+          Atmosphere velocity effects
+          Gas Effects
+          Networking Atmos / Pipe simulation LOD (Flash = Send Update, Follows Cursor/Player)</summary></entry><entry><title type="html">Precision Engineering</title><link href="https://simie.github.io/simonmoles.com/projects/precision-engineering/" rel="alternate" type="text/html" title="Precision Engineering" /><published>2017-05-25T00:00:00+01:00</published><updated>2017-05-25T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/precision-engineering</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/precision-engineering/">&lt;p&gt;&lt;img src=&quot;/simonmoles.com/assets/images/pe/header.jpg&quot; alt=&quot;Banner&quot; /&gt;&lt;/p&gt;
+          &lt;p&gt;Precision Engineering is a mod for &lt;a href=&quot;http://store.steampowered.com/app/255710/Cities_Skylines/&quot; target=&quot;_blank&quot;&gt;Cities: Skylines&lt;/a&gt; that adds snapping and measuring tools when placing roads, power lines, pipes, etc.&lt;/p&gt;
+          &lt;h1 id=&quot;development&quot;&gt;Development&lt;/h1&gt;
+          &lt;p&gt;Cities: Skylines is created with the Unity game engine. This makes it relatively straightforward to decompile the C# assemblies and investigate how things work. The game’s developers, Colossal Order, also provided a powerful mod API that allowed loading any C# DLL.&lt;/p&gt;
+          &lt;p&gt;I was able to dig deep into the road placement code to discover where I can hook in to display information to the user and enable angle snapping. Using a snippet of code provided by &lt;a href=&quot;https://github.com/sschoener/cities-skylines-detour&quot;&gt;cope&lt;/a&gt; I was able to override the built-in methods used for road placement to implement custom snapping behaviour without modifying the game’s DLLs.&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:57%; margin-bottom: 10px;&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/DifferentIgnorantAplomadofalcon&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;h1 id=&quot;reception&quot;&gt;Reception&lt;/h1&gt;
+          &lt;p&gt;Precision Engineering released in May 2015 and sat at #1 most popular on the Workshop front page for almost a year. It currently sits at the #3 most subscribed mod of all time for Cities Skylines with over 500,000 subscribers, and continues to gain more each day.&lt;/p&gt;
+          &lt;p&gt;I created a &lt;a href=&quot;https://imgur.com/a/YGXHH&quot;&gt;series of gifs&lt;/a&gt; to show off the mod to potential users. This proved very popular, and inspired a trend that other popular mods followed.&lt;/p&gt;
+          &lt;p&gt;Colossal Order implemented a very similar set of features into the base game in May 2017. This has slowed the flow of new users. However, since it does not implement the entire feature set of Precision Engineering, there are still over 1000 new users each day.&lt;/p&gt;
+          &lt;div style=&quot;position:relative;padding-bottom:57%; margin-bottom: 10px;&quot;&gt;&lt;iframe src=&quot;https://gfycat.com/ifr/FrighteningGlitteringAustralianfreshwatercrocodile&quot; frameborder=&quot;0&quot; scrolling=&quot;no&quot; width=&quot;100%&quot; height=&quot;100%&quot; style=&quot;position:absolute;top:0;left:0;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+          &lt;h3 id=&quot;links&quot;&gt;Links&lt;/h3&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;http://steamcommunity.com/sharedfiles/filedetails/?id=445589127&quot;&gt;Steam Workshop Page&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.reddit.com/r/CitiesSkylines/comments/37i4ls/release_precision_engineering_updated_guide_lines/&quot;&gt;Reddit Release Thread&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://github.com/Simie/PrecisionEngineering&quot;&gt;Github Repo&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</content><summary type="html">Precision Engineering is a mod for Cities: Skylines that adds snapping and measuring tools when placing roads, power lines, pipes, etc.
+          Development
+          Cities: Skylines is created with the Unity game engine. This makes it relatively straightforward to decompile the C# assemblies and investigate how things work. The game’s developers, Colossal Order, also provided a powerful mod API that allowed loading any C# DLL.
+          I was able to dig deep into the road placement code to discover where I can hook in to display information to the user and enable angle snapping. Using a snippet of code provided by cope I was able to override the built-in methods used for road placement to implement custom snapping behaviour without modifying the game’s DLLs.
+          Reception
+          Precision Engineering released in May 2015 and sat at #1 most popular on the Workshop front page for almost a year. It currently sits at the #3 most subscribed mod of all time for Cities Skylines with over 500,000 subscribers, and continues to gain more each day.
+          I created a series of gifs to show off the mod to potential users. This proved very popular, and inspired a trend that other popular mods followed.
+          Colossal Order implemented a very similar set of features into the base game in May 2017. This has slowed the flow of new users. However, since it does not implement the entire feature set of Precision Engineering, there are still over 1000 new users each day.
+          Links
+          Steam Workshop Page
+          Reddit Release Thread
+          Github Repo</summary></entry><entry><title type="html">TypeSafe</title><link href="https://simie.github.io/simonmoles.com/projects/typesafe/" rel="alternate" type="text/html" title="TypeSafe" /><published>2017-05-20T00:00:00+01:00</published><updated>2017-05-20T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/typesafe</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/typesafe/">&lt;h1 id=&quot;editor-utility-for-the-unity-engine&quot;&gt;Editor Utility for the Unity Engine&lt;/h1&gt;
+          &lt;p&gt;When developing in Unity you will inevitably end up having to hard-code various strings into your source files, for example when using resources, layers, or input. TypeSafe is a tool for automatically generating C# code with constants for the strings you would usually have as naked strings throughout your project.&lt;/p&gt;
+          &lt;!--more--&gt;
+          &lt;p&gt;A simple example, &lt;code class=&quot;highlighter-rouge&quot;&gt;Resources.Load(&quot;SomeResource/WithALongPath/Name&quot;)&lt;/code&gt; would become &lt;code class=&quot;highlighter-rouge&quot;&gt;SRResources.SomeResources.WithALongPath.Name.Load()&lt;/code&gt;. If the resource is moved or deleted, your code will fail to compile and you will be immediately aware of the error. Without TypeSafe you will not detect the error until the code is executed at runtime, which may happen so rarely that you don’t catch the bug before releasing to users.&lt;/p&gt;
+          &lt;h1 id=&quot;development&quot;&gt;Development&lt;/h1&gt;
+          &lt;p&gt;After releasing SRDebugger I realised a large portion of support requests involved conflicts with existing user code or problems with importing. I therefore decided to attempt to avoid this with TypeSafe by distributing only a compiled .DLL with all non-public methods and classes inaccessible to the end user. As a result I have rarely had to deal with any of the issues that SRDebugger suffered from. This also allowed me to use C# 6, which was unsupported by Unity at the time, as it can compile to a CIL 2.0 compatible form that Unity accepts.&lt;/p&gt;
+          &lt;p&gt;Another major difference to the development of SRDebugger is the focus on automation during the build and submission phase. A big obstacle to patching and releasing updates for SRDebugger was the lengthy process of packaging the product for shipping. This time I decided I wanted to be able to run a batch file and have a package created and uploaded in an identical way each time. Luckily, I found an &lt;a href=&quot;https://github.com/thinksquirrel/asset-store-batch-mode&quot;&gt;existing wrapper&lt;/a&gt; for the Unity Asset Store Tools that allowed for it to be invoked from the command line. Once set up this has been an incredible time saver. I copied this system back to SRDebugger as soon as I could.&lt;/p&gt;
+          &lt;h1 id=&quot;reception&quot;&gt;Reception&lt;/h1&gt;
+          &lt;p&gt;People who have used the product have responded positively. It hasn’t been as successful as SRDebugger, possibly due to the more niche appeal. Nethertheless it has sold over 300 copies and has been featured a number of times in Unity promotions, including a “Sane and Sensible” sale that promoted assets to clean up your project and improve stability.&lt;/p&gt;
+          &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.stompyrobot.uk/tools/typesafe/&quot;&gt;Product Page&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.assetstore.unity3d.com/#!/content/35903&quot;&gt;Asset Store Page&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</content><summary type="html">Editor Utility for the Unity Engine
+          When developing in Unity you will inevitably end up having to hard-code various strings into your source files, for example when using resources, layers, or input. TypeSafe is a tool for automatically generating C# code with constants for the strings you would usually have as naked strings throughout your project.</summary></entry><entry><title type="html">Space Game Prototype</title><link href="https://simie.github.io/simonmoles.com/projects/space-prototype/" rel="alternate" type="text/html" title="Space Game Prototype" /><published>2017-05-20T00:00:00+01:00</published><updated>2017-05-20T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/space-prototype</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/space-prototype/">&lt;p&gt;A story driven RPG inspired by EV Nova. This project was dropped in favour of &lt;a href=&quot;/simonmoles.com/projects/nova/&quot;&gt;Nova&lt;/a&gt;.&lt;/p&gt;
+          &lt;div class=&quot;responsive-container&quot;&gt;
+          &lt;iframe width=&quot;1920&quot; height=&quot;1080&quot; src=&quot;https://www.youtube.com/embed/kVasxJhXBUY?vq=hd1080&amp;amp;rel=0&quot; frameborder=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+          &lt;/div&gt;</content><summary type="html">A story driven RPG inspired by EV Nova. This project was dropped in favour of Nova.</summary></entry><entry><title type="html">Gravitional</title><link href="https://simie.github.io/simonmoles.com/projects/gravitional/" rel="alternate" type="text/html" title="Gravitional" /><published>2017-05-01T00:00:00+01:00</published><updated>2017-05-01T00:00:00+01:00</updated><id>https://simie.github.io/simonmoles.com/projects/gravitational</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/gravitional/">&lt;h1 id=&quot;networked-party-multiplayer-prototype-game-for-mobile-devices&quot;&gt;Networked party-multiplayer prototype game for mobile devices.&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Status: Unfinished&lt;/li&gt;
+          &lt;li&gt;Year: 2014-2015&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;In Gravitational, the player controls a single planet in a crowded solar system orbiting around a bright sun.
+          The aim is to build up economy and buildings on your planet to fuel the war machine, massive interplanetary turrets that fling projectiles around the sun to hit your enemies.
+          Or yourself by mistake.&lt;/p&gt;
+          &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;http://stompyrobot.uk/games/gravitational/&quot;&gt;Stompy Robot - Gravitational&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</content><summary type="html">Networked party-multiplayer prototype game for mobile devices.
+          Status: Unfinished
+          Year: 2014-2015
+          In Gravitational, the player controls a single planet in a crowded solar system orbiting around a bright sun.
+          The aim is to build up economy and buildings on your planet to fuel the war machine, massive interplanetary turrets that fling projectiles around the sun to hit your enemies.
+          Or yourself by mistake.
+          Links
+          Stompy Robot - Gravitational</summary></entry><entry><title type="html">SRDebugger</title><link href="https://simie.github.io/simonmoles.com/projects/srdebugger/" rel="alternate" type="text/html" title="SRDebugger" /><published>2015-02-07T00:00:00+00:00</published><updated>2015-02-07T00:00:00+00:00</updated><id>https://simie.github.io/simonmoles.com/projects/srdebugger</id><content type="html" xml:base="https://simie.github.io/simonmoles.com/projects/srdebugger/">&lt;h1 id=&quot;console--tools-on-device-for-unity-games&quot;&gt;Console &amp;amp; Tools On-Device for Unity Games&lt;/h1&gt;
+          &lt;p&gt;&lt;img src=&quot;/simonmoles.com/assets/images/project_srdebugger/banner.png&quot; alt=&quot;Banner&quot; /&gt;&lt;/p&gt;
+          &lt;h1 id=&quot;motivation&quot;&gt;Motivation&lt;/h1&gt;
+          &lt;p&gt;One of Unity’s primary advantages is fast iteration. Unfortunately, this advantage doesn’t apply when deploying and testing on mobile platforms. The long export and deployment times can make tweaking values on mobile excruciatingly slow. While working on Unity games for iPad at Tigerface Games I encountered issues like this nearly every day:&lt;/p&gt;
+          &lt;ul&gt;
+          &lt;li&gt;Bugs or errors while demoing the game and no debug log available.&lt;/li&gt;
+          &lt;li&gt;Wanting to demonstrate some feature, but the feature is behind a locked level.&lt;/li&gt;
+          &lt;li&gt;Tweaking parameters would take ages due to slow export + deploy.&lt;/li&gt;
+          &lt;/ul&gt;
+          &lt;p&gt;I created SRDebugger as an attempt to fix all of these issues.&lt;/p&gt;
+          &lt;h1 id=&quot;development&quot;&gt;Development&lt;/h1&gt;
+          &lt;p&gt;SRDebugger began as the debug panel for my own &lt;a href=&quot;/simonmoles.com/projects/nova/&quot;&gt;iPad game&lt;/a&gt;. As I added more features, I began to realise this would be a useful product for other developers. My time working with Tigerface Games on their projects solidified this belief. I started to refactor the code to make it suitable for importing into other projects, and created a new game-agnostic UI.&lt;/p&gt;
+          &lt;p&gt;SRDebugger was released on the Unity Asset Store in February 2015. It received favourable reviews from customers and continues to sell well to this day. I continue to improve and add features based on user feedback.&lt;/p&gt;
+          &lt;h1 id=&quot;features&quot;&gt;Features&lt;/h1&gt;
+          &lt;p&gt;SRDebugger is structured so that the monitoring systems can execute without the UI being loaded. This loose coupling enables SRDebugger to have a minimal performance footprint when not in use, but it can be brought up at a moments notice when required. This was an essential requirement for including SRDebugger in all builds of a product.&lt;/p&gt;
+          &lt;p&gt;The Options panel is my personal favourite feature. It makes it incredibly easy to tweak the &lt;em&gt;look and feel&lt;/em&gt; of a game by pinning a property to the screen and adjusting it on the fly. I’ve used it for calibrating touch control sensitivities and animation speeds. It can also trigger methods, in my case I have commands like “Win Battle”, “Reset Battle”, “Give Money”, to quickly reach the part of the game I need to test.&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;/simonmoles.com/assets/images/project_srdebugger/options_usage.gif&quot; alt=&quot;Options Panel Example&quot; /&gt;
+          &lt;em&gt;The options panel can tweak gameplay parameters and execute methods.&lt;/em&gt;&lt;/p&gt;
+          &lt;p&gt;Another major aim for SRDebugger was for it to be “plug and play”. I wanted the user to be able to import the plugin and be up and running in minutes. On the first import, a quick guide will appear telling the user how to access SRDebugger in their game. The next time they run their game, SRDebugger is ready to go. The runtime console uses the built in Unity log callback to retrieve the debug logs output by the standard Unity &lt;code class=&quot;highlighter-rouge&quot;&gt;Debug.Log()&lt;/code&gt; method. The user doesn’t have to change any of their logging code to start using SRDebugger.&lt;/p&gt;
+          &lt;p&gt;&lt;img src=&quot;/simonmoles.com/assets/images/project_srdebugger/welcome_screen.gif&quot; alt=&quot;Welcome Screen Example&quot; /&gt;
+          &lt;em&gt;The welcome screen greets new users and explains how to get started.&lt;/em&gt;&lt;/p&gt;
+          &lt;p&gt;The built-in bug reporter component communicates with my API server to forward the console log, (anonymised) system info, user email, message, and a screenshot of game to the developers email address. The reporter can be accessed from the panel or brought up with the SRDebugger API. This way the developer does not have to grant access to the entire debug panel to allow their users to report bugs. As browsing long logs on a touch device can be tedious, I use this service internally to send the console log to my PC where I can search and filter it as required.&lt;/p&gt;
+          &lt;h1 id=&quot;reception&quot;&gt;Reception&lt;/h1&gt;
+          &lt;p&gt;I was very fortunate to have a few very enthusiastic customers on my first day of release. Their great feedback and bug reports really helped the product get some momentum. A few months after release I was asked by Unity to include SRDebugger in their second “Level11” sale for Unity Pro subscribers. This steep discount propelled SRDebugger onto the front page for a number of weeks and led to a great number of positive reviews and purchases by non-Level 11 users.&lt;/p&gt;
+          &lt;p&gt;Since then there has been a steady stream of sales, usually keeping SRDebugger on the first page of the &lt;em&gt;Scripting/Other&lt;/em&gt; category on the Asset Store. Further sales and promotions by Unity have led to a few very good months for SRDebugger.&lt;/p&gt;
+          &lt;p&gt;As of May 2017, SRDebugger has sold over one thousand copies and has over one hundred reviews on the Asset Store.&lt;/p&gt;
+          &lt;h1 id=&quot;challenges&quot;&gt;Challenges&lt;/h1&gt;
+          &lt;p&gt;The design aspect of the project was challenging for me. Creating a design for the panel, marketing materials, documentation, and website was significantly more time consuming that I had expected. The actual development of the debug panel turned out to be the easiest part of the project. However, I am pleased with the end result and subsequent updates to the product have been much faster now I have an established design style and company website. I am especially happy with the SRDebugger &lt;a href=&quot;https://www.stompyrobot.uk/tools/srdebugger&quot;&gt;product pages&lt;/a&gt; with the auto-play video in the header demonstrating each main feature of the panel.&lt;/p&gt;
+          &lt;p&gt;SRDebugger uses the new Unity UI system that was introduced in Unity 4.6 and Unity 5.0. Supporting older versions of Unity has made it hard to adopt the latest features, and workarounds have been required for changes in the API in later versions.&lt;/p&gt;
+          &lt;h1 id=&quot;links&quot;&gt;Links&lt;/h1&gt;
+          &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.stompyrobot.uk/tools/srdebugger&quot;&gt;Product Page&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;https://www.assetstore.unity3d.com/en/#!/content/27688&quot;&gt;Asset Store Page&lt;/a&gt;&lt;/li&gt;
+          &lt;/ul&gt;</content><category term="Unity" /><category term="Asset" /><category term="Stompy Robot" /><summary type="html">Console &amp;amp; Tools On-Device for Unity Games
+          Motivation
+          One of Unity’s primary advantages is fast iteration. Unfortunately, this advantage doesn’t apply when deploying and testing on mobile platforms. The long export and deployment times can make tweaking values on mobile excruciatingly slow. While working on Unity games for iPad at Tigerface Games I encountered issues like this nearly every day:
+          Bugs or errors while demoing the game and no debug log available.
+          Wanting to demonstrate some feature, but the feature is behind a locked level.
+          Tweaking parameters would take ages due to slow export + deploy.
+          I created SRDebugger as an attempt to fix all of these issues.
+          Development
+          SRDebugger began as the debug panel for my own iPad game. As I added more features, I began to realise this would be a useful product for other developers. My time working with Tigerface Games on their projects solidified this belief. I started to refactor the code to make it suitable for importing into other projects, and created a new game-agnostic UI.
+          SRDebugger was released on the Unity Asset Store in February 2015. It received favourable reviews from customers and continues to sell well to this day. I continue to improve and add features based on user feedback.
+          Features
+          SRDebugger is structured so that the monitoring systems can execute without the UI being loaded. This loose coupling enables SRDebugger to have a minimal performance footprint when not in use, but it can be brought up at a moments notice when required. This was an essential requirement for including SRDebugger in all builds of a product.
+          The Options panel is my personal favourite feature. It makes it incredibly easy to tweak the look and feel of a game by pinning a property to the screen and adjusting it on the fly. I’ve used it for calibrating touch control sensitivities and animation speeds. It can also trigger methods, in my case I have commands like “Win Battle”, “Reset Battle”, “Give Money”, to quickly reach the part of the game I need to test.
+          The options panel can tweak gameplay parameters and execute methods.
+          Another major aim for SRDebugger was for it to be “plug and play”. I wanted the user to be able to import the plugin and be up and running in minutes. On the first import, a quick guide will appear telling the user how to access SRDebugger in their game. The next time they run their game, SRDebugger is ready to go. The runtime console uses the built in Unity log callback to retrieve the debug logs output by the standard Unity Debug.Log() method. The user doesn’t have to change any of their logging code to start using SRDebugger.
+          The welcome screen greets new users and explains how to get started.
+          The built-in bug reporter component communicates with my API server to forward the console log, (anonymised) system info, user email, message, and a screenshot of game to the developers email address. The reporter can be accessed from the panel or brought up with the SRDebugger API. This way the developer does not have to grant access to the entire debug panel to allow their users to report bugs. As browsing long logs on a touch device can be tedious, I use this service internally to send the console log to my PC where I can search and filter it as required.
+          Reception
+          I was very fortunate to have a few very enthusiastic customers on my first day of release. Their great feedback and bug reports really helped the product get some momentum. A few months after release I was asked by Unity to include SRDebugger in their second “Level11” sale for Unity Pro subscribers. This steep discount propelled SRDebugger onto the front page for a number of weeks and led to a great number of positive reviews and purchases by non-Level 11 users.
+          Since then there has been a steady stream of sales, usually keeping SRDebugger on the first page of the Scripting/Other category on the Asset Store. Further sales and promotions by Unity have led to a few very good months for SRDebugger.
+          As of May 2017, SRDebugger has sold over one thousand copies and has over one hundred reviews on the Asset Store.
+          Challenges
+          The design aspect of the project was challenging for me. Creating a design for the panel, marketing materials, documentation, and website was significantly more time consuming that I had expected. The actual development of the debug panel turned out to be the easiest part of the project. However, I am pleased with the end result and subsequent updates to the product have been much faster now I have an established design style and company website. I am especially happy with the SRDebugger product pages with the auto-play video in the header demonstrating each main feature of the panel.
+          SRDebugger uses the new Unity UI system that was introduced in Unity 4.6 and Unity 5.0. Supporting older versions of Unity has made it hard to adopt the latest features, and workarounds have been required for changes in the API in later versions.
+          Links
+          Product Page
+          Asset Store Page</summary></entry></feed>
