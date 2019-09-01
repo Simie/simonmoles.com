@@ -16,9 +16,10 @@
 title: "Simon Moles"
 email: me@simonmoles.com
 description: ""
-baseurl: "/simonmoles.com" # the subpath of your site, e.g. /blog
-url: https://simie.github.io # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: SimonMoles
+baseurl: "" # the subpath of your site, e.g. /blog
+url: https://www.simonmoles.com # the base hostname & protocol for your site, e.g. http://example.com
+#twitter_username: SimonMoles
+linkedin_username: Simon-Moles
 github_username: Simie
 timezone: Europe/London
 excerpt_separator: <!--more-->
