@@ -1,1 +1,4 @@
-<a href="https://www.linkedin.com/in/{{ include.username | escape }}" title="My LinkedIn"><span class="icon icon--linkedin"><svg viewBox="0 0 16 16" width="16px" height="16px"><use xlink:href="{{ '/assets/images/minima-social-icons.svg#linkedin' | relative_url }}"></use></svg></span><span class="username">{{ include.username }}</span></a>
+<a href="https://www.linkedin.com/in/{{ include.username | escape }}" title="My LinkedIn">
+    <span class="icon icon--linkedin">{% include icon-linkedin.svg %}</span>
+    <span class="username"></span>{{ include.username }}</span>
+</a>
